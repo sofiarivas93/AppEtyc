@@ -9,14 +9,17 @@ import { HomePage } from '../pages/home/home';
 import {DenunciasPage} from "../pages/denuncias/denuncias";
 import {ListadoPage} from "../pages/listado/listado";
 import {DetallePage} from "../pages/detalle/detalle";
-
+import {QuizPage} from "../pages/quiz/quiz";
+import {RankingPage} from "../pages/ranking/ranking";
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     DenunciasPage, // Agregamos el nombre de nuestro nuevo Page
     ListadoPage,
-    DetallePage
+    DetallePage,
+    QuizPage,
+    RankingPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,9 @@ import {DetallePage} from "../pages/detalle/detalle";
     HomePage,
     DenunciasPage, // Agregamos el nombre de nuestro nuevo Page
     ListadoPage,
-    DetallePage
+    DetallePage,
+    QuizPage,
+    RankingPage
   ],
   providers: [
     StatusBar,
