@@ -15,14 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'quiz.html',
 })
 export class QuizPage {
-  mostrarP2:Boolean;
-  mostrarP1:Boolean;
-  mostrarP3:Boolean;
-  mostrarMensajeOk:Boolean;
-  mostrarP2:false;
-  mostrarP1=true;
-  mostrarP3=false;
-  mostrarMensajeOk:false;
+  mostrarP2: Boolean = false;
+  mostrarP1: Boolean = true;
+  mostrarP3: Boolean = false;
+  mostrarMensajeOk: Boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -33,17 +29,13 @@ export class QuizPage {
   next():void{
     this.mostrarP2=true;
     this.mostrarP1=false;
-    this.mostrarP3=false;
   }
   next2():void{
       this.mostrarP3=true;
       this.mostrarP2=false;
-      this.mostrarP1=false;
   }
   finalquiz():void{
       this.mostrarP3=false;
-      this.mostrarP2=false;
-      this.mostrarP1=false;
       this.mostrarMensajeOk=true;
   }
 
