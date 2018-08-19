@@ -33,10 +33,10 @@
         </ion-card-content>
 
       </ion-card>
-      <button ion-button full >1 mes</button>
-      <button ion-button full >3 meses</button>
+      <button ion-button full onclick = "this.disabled = true">1 mes</button>
+      <button ion-button full onclick = "this.disabled = true">3 meses</button>
       <button ion-button full block (click)=next()>1 año</button>
-      <button ion-button full >10 años</button>
+      <button ion-button full onclick = "this.disabled = true">10 años</button>
     </div>
     <div *ngIf="mostrarP2">
 
@@ -54,9 +54,9 @@
 
         </ion-card>
         <button ion-button full block (click)=next2()>Limpia</button>
-        <button ion-button full >Sucia</button>
-        <button ion-button full >Estancada</button>
-        <button ion-button full >Agua con cloro</button>
+        <button ion-button full onclick = "this.disabled = true">Sucia</button>
+        <button ion-button full onclick = "this.disabled = true">Estancada</button>
+        <button ion-button full onclick = "this.disabled = true">Agua con cloro</button>
 
     </div>
     <div *ngIf="mostrarP3">
@@ -74,9 +74,9 @@
         </ion-card-content>
 
       </ion-card>
-      <button ion-button full >1000 km</button>
-      <button ion-button full >largas</button>
-      <button ion-button full >no vuela</button>
+      <button ion-button full onclick = "this.disabled = true">1000 km</button>
+      <button ion-button full onclick = "this.disabled = true">largas</button>
+      <button ion-button full onclick = "this.disabled = true">no vuela</button>
       <button ion-button full block (click)=finalquiz()>cortas</button>
 
     </div>
