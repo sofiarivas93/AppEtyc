@@ -23,6 +23,7 @@ export class QuizPage {
   mostrarP1=true;
   mostrarP3=false;
   mostrarMensajeOk:false;
+  isenabled:boolean=false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
@@ -33,18 +34,22 @@ export class QuizPage {
   next():void{
     this.mostrarP2=true;
     this.mostrarP1=false;
-    this.mostrarP3=false;
+    //this.mostrarP3=false;
   }
   next2():void{
       this.mostrarP3=true;
       this.mostrarP2=false;
-      this.mostrarP1=false;
+      //this.mostrarP1=false;
   }
   finalquiz():void{
       this.mostrarP3=false;
-      this.mostrarP2=false;
-      this.mostrarP1=false;
+      //this.mostrarP2=false;
+      //this.mostrarP1=false;
       this.mostrarMensajeOk=true;
   }
 
+  clicError():void{
+  //enable the button
+    isenabled=true;
+  }
 }

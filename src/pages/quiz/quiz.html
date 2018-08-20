@@ -33,10 +33,10 @@
         </ion-card-content>
 
       </ion-card>
-      <button ion-button full >1 mes</button>
-      <button ion-button full >3 meses</button>
-      <button ion-button full block (click)=next()>1 año</button>
-      <button ion-button full >10 años</button>
+      <button ion-button full [disabled]="isenabled" (click)=clicError()>1 mes</button>
+      <button ion-button full [disabled]="isenabled" (click)=clicError()>3 meses</button>
+      <button ion-button full  (click)=next()>1 año</button>
+      <button ion-button full [disabled]="isenabled" (click)=clicError()>10 años</button>
     </div>
     <div *ngIf="mostrarP2">
 
