@@ -15,11 +15,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'quiz.html',
 })
 export class QuizPage {
-  mostrarP2:Boolean=false;
-  mostrarP1:Boolean=true;
-  mostrarP3:Boolean=false;
-  mostrarMensajeOk:Boolean=false;
-  isenabled:Boolean=false;
+
+  mostrarP2: Boolean = false;
+  mostrarP1: Boolean = true;
+  mostrarP3: Boolean = false;
+  mostrarMensajeOk: Boolean = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
