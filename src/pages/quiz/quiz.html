@@ -1,0 +1,96 @@
+
+<ion-header>
+
+  <ion-navbar>
+
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+
+    <ion-title>Quiz sobre el Dengue</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+  <ion-content padding>
+    <div *ngIf="mostrarP1">
+      <ion-card>
+        <ion-card-header>
+          Pregunta 1
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>
+            Cuanto tiempo puede durar el huevo del mosquito Aedes Aegypti?
+          </p>
+
+        </ion-card-content>
+
+      </ion-card>
+
+      <button ion-button full onclick = "this.disabled = true">1 mes</button>
+      <button ion-button full onclick = "this.disabled = true">3 meses</button>
+      <button ion-button full block (click)=next()>1 año</button>
+      <button ion-button full onclick = "this.disabled = true">10 años</button>
+
+    </div>
+    <div *ngIf="mostrarP2">
+        <ion-card>
+          <ion-card-header>
+            Pregunta 2
+          </ion-card-header>
+
+          <ion-card-content>
+            <p>
+              El mosquito Aedes Aegypti solo en vive en agua...
+            </p>
+
+          </ion-card-content>
+
+        </ion-card>
+        <button ion-button full block (click)=next2()>Limpia</button>
+        <button ion-button full onclick = "this.disabled = true">Sucia</button>
+        <button ion-button full onclick = "this.disabled = true">Estancada</button>
+        <button ion-button full onclick = "this.disabled = true">Agua con cloro</button>
+
+    </div>
+    <div *ngIf="mostrarP3">
+
+      <ion-card>
+        <ion-card-header>
+          Pregunta 3
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>
+            El mosquito Aedes Aegypti vuela distancias...
+          </p>
+
+        </ion-card-content>
+
+      </ion-card>
+      <button ion-button full onclick = "this.disabled = true">1000 km</button>
+      <button ion-button full onclick = "this.disabled = true">largas</button>
+      <button ion-button full onclick = "this.disabled = true">no vuela</button>
+      <button ion-button full block (click)=finalquiz()>cortas</button>
+
+    </div>
+    <div *ngIf="mostrarMensajeOk">
+      <ion-card>
+        <img src="assets/img/buenTrabajo.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Has completado el Quiz!
+          </ion-card-title>
+          <p>
+            Recuerda que la lucha contra el dengue
+            es de todos. =D
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </ion-content>
+
+
+

@@ -1,7 +1,10 @@
 <ion-header>
   <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
     <ion-title>
-      {{titlePage}}
+      Agregar Denuncia
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -18,23 +21,18 @@
   </ion-item>
 
   <ion-item>
-    <ion-label floating>Asunto</ion-label>
-    <ion-input type="text" required [(ngModel)]="asunto"></ion-input>
-  </ion-item>
-
-  <ion-item>
     <ion-label floating>Descripción</ion-label>
     <ion-textarea [attr.rows]="3" [(ngModel)]="descripcion"></ion-textarea>
   </ion-item>
 
-</ion-content>
+  <ion-footer no-lines no-border >
+    <ion-toolbar no-border no-lines>
+      <ion-fab right bottom>
+        <button font-size ion-fab color="secondary" (click)="enviarDenuncia()">
+          <ion-icon   name="send"></ion-icon>
+        </button>
+      </ion-fab>
+    </ion-toolbar>
+  </ion-footer>
 
-<ion-footer no-lines no-border >
-  <ion-toolbar no-border no-lines>
-    <ion-fab right bottom>
-      <button ion-fab color="secondary" (click)="enviarDenuncia()">
-        <ion-icon name="send"></ion-icon>
-      </button>
-    </ion-fab>
-  </ion-toolbar>
-</ion-footer>
+</ion-content>
